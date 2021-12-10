@@ -17,25 +17,25 @@ public class Personne {
 		this.prenom = nvPrenom;
 		this.adressePostale = adresse;
 	}
-	public String GetName() {
+	public String getName() {
 		return this.nom;
-	}	public String GetFirstname() {
+	}	public String getFirstname() {
 		 return this.prenom;
 	}
-	public void SetName(String name) {
+	public void setName(String name) {
 		this.nom = name;
 	}
-	public void SetFirstname(String firstname) {
+	public void setFirstname(String firstname) {
 		this.prenom = firstname;
 	}
-	public AdressePostale Adresse() {
+	public AdressePostale adresse() {
 		return this.adressePostale;
 	}
-	public void SetAdresse(AdressePostale adresse) {
+	public void setAdresse(AdressePostale adresse) {
 		this.adressePostale = adresse;
 	}
-	public void Majuscule(){
-		String name = this.GetName().toUpperCase();
-		String firstname = this.GetFirstname();
+	public void majuscule(){
+		String name = this.getName().toUpperCase();
+		String firstname = this.getFirstname();
 		System.out.println(name + " " + firstname);
 	}}
