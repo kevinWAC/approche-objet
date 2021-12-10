@@ -13,8 +13,29 @@ public class Personne {
 	}
 	
 	public Personne(String nvNom, String nvPrenom, AdressePostale adresse) {
-		nom = nvNom;
-		prenom = nvPrenom;
-		adressePostale = adresse;
+		this.nom = nvNom;
+		this.prenom = nvPrenom;
+		this.adressePostale = adresse;
 	}
-}
+	public String GetName() {
+		return this.nom;
+	}	public String GetFirstname() {
+		 return this.prenom;
+	}
+	public void SetName(String name) {
+		this.nom = name;
+	}
+	public void SetFirstname(String firstname) {
+		this.prenom = firstname;
+	}
+	public AdressePostale Adresse() {
+		return this.adressePostale;
+	}
+	public void SetAdresse(AdressePostale adresse) {
+		this.adressePostale = adresse;
+	}
+	public void Majuscule(){
+		String name = this.GetName().toUpperCase();
+		String firstname = this.GetFirstname();
+		System.out.println(name + " " + firstname);
+	}}
