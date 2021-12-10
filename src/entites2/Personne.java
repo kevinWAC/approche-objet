@@ -5,14 +5,16 @@ import entites.AdressePostale;
 public class Personne {
 	public String nom;
 	public String prenom;
-	public AdressePostale adresse = new AdressePostale();
+	public AdressePostale adressePostale;
 	
-	public Personne(String nvNom, String nvPrenom, int nvNumeroRue, String nvLibelle, int nvCodePostale, String ville ) {
+	public Personne(String nvNom, String nvPrenom ) {
 		nom = nvNom;
 		prenom = nvPrenom;
-		adresse.numeroRue = nvNumeroRue;
-		adresse.libelleRue = nvLibelle;
-		adresse.codePostale = nvCodePostale;
-		adresse.codePostale = nvCodePostale;
+	}
+	
+	public Personne(String nvNom, String nvPrenom, AdressePostale adresse) {
+		nom = nvNom;
+		prenom = nvPrenom;
+		adressePostale = adresse;
 	}
 }
