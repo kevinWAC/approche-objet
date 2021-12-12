@@ -8,11 +8,8 @@ public class Compte {
 		 this.numeroCompte = numeroCompte;
 		 this.soldeCompte = soldeCompte;
 	}
-		 public String toString() {
-			 return "Numero compte : " + this.numeroCompte + "\nSolde compte : " + this.soldeCompte;
-				    
+	
+	public String toString() {
+		return "Numero compte: " + this.numeroCompte + "\nSolde compte: " + this.soldeCompte;		    
 	}
-	
-	
-	
 }
