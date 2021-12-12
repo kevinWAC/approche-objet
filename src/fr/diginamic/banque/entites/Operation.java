@@ -3,9 +3,7 @@ package fr.diginamic.banque.entites;
 public abstract class Operation {
 	public String date;
 	public float montant;
-	public String operateur;
-	public static float montantGlobal;
-	
+
 	public Operation(String date, float montant) {
 		this.date = date;
 		this.montant = montant;
