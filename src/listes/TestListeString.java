@@ -28,8 +28,20 @@ public class TestListeString<ville> {
 			villesMajuscule.add(ville.toUpperCase());
 		}
 		
+//		for (String ville : villes) {
+//			villes.set(villes.indexOf(ville), ville.toUpperCase());
+//		}
+
+//		ListIterator<String> iterator = villes.listIterator();
+//		while (iterator.hasNext()) {
+//		    iterator.set(iterator.next().toUpperCase());
+//		}
+		
+		
 		System.out.println(villeAvecLePusDeLettre);
 		System.out.println(villesMajuscule);
+		
+//		villes.removeIf(ville -> (ville.startsWith("N")));
 		
 		Iterator<String> iter = villesMajuscule.iterator();
 		while(iter.hasNext()) {

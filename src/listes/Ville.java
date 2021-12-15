@@ -1,9 +1,9 @@
 package listes;
 
-public class Ville {
+public class Ville implements Comparable<Ville> {
 	
-	String nom;
-	int nbHabitants;
+	public String nom;
+	public int nbHabitants;
 	
 	public Ville(String nom, int nbHabitants) {
 		this.nom = nom;
@@ -13,6 +13,16 @@ public class Ville {
 	@Override
 	public String toString() {
 		return nom + " " + nbHabitants;
+	}
+
+	@Override
+	public int compareTo(Ville o) {
+			if (nbHabitants > o.nbHabitants) {
+				return 1;
+			} if (nbHabitants < o.nbHabitants) {
+				return -1;
+			}		
+			return 0;
 	}
 }
 
