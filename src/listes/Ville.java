@@ -24,5 +24,14 @@ public class Ville implements Comparable<Ville> {
 			}		
 			return 0;
 	}
+	@Override
+	public boolean equals(Object object) {
+		if (!(object instanceof Ville)) {
+			return false;
+
+			}
+			Ville other = (Ville) object;
+			return nom.equals(other.nom);
+	}
 }
 
