@@ -1,18 +1,31 @@
 package listes;
 
+import fr.diginamic.testenumeration.Continent;
+
 public class Ville implements Comparable<Ville> {
 	
+	
+	Continent continent;
 	public String nom;
 	public int nbHabitants;
 	
-	public Ville(String nom, int nbHabitants) {
+	public Ville(String nom, int nbHabitants, Continent continent) {
 		this.nom = nom;
 		this.nbHabitants = nbHabitants;
+		this.continent = continent;
 	}
 	
+	public Continent getContinent() {
+		return continent;
+	}
+
+	public void setContinent(Continent continent) {
+		this.continent = continent;
+	}
+
 	@Override
 	public String toString() {
-		return nom + " " + nbHabitants;
+		return nom + " " + nbHabitants + " " + continent.getLibelle();
 	}
 
 	@Override
